@@ -1,0 +1,66 @@
+# Cấu hình pipeline "Hiệu quả quảng cáo – khuyến mãi & dự báo GMV mùa Mega Sale"
+seed: 42
+
+data:
+  gv_note: "Dữ liệu của giảng viên là dữ liệu mô phỏng (slide Ch1 tr.11: src: Synthetic Data)."
+  money_unit_gv: "triệu VNĐ (riêng financial_metadata_100: nghìn VNĐ/đơn vị)"
+  money_unit_gso: "nghìn tỷ đồng"
+
+calendar:
+  # Mùng 1 Tết Nguyên đán (dương lịch)
+  tet: ["2020-01-25", "2021-02-12", "2022-02-01", "2023-01-22", "2024-02-10", "2025-01-29", "2026-02-17", "2027-02-06"]
+  tet_window_days: 21
+  # Ngày đôi (ngày = tháng): 1.1, 2.2, ..., 12.12; ngày giữa tháng 15 và ngày lương 25 là mốc khuyến mãi phổ biến
+  payday: 25
+  mid_month: 15
+  covid_months: ["2020-04", "2021-07", "2021-08", "2021-09"]
+
+marketing:
+  mega_discount_threshold: 0.5      # ngày có Discount ≥ 0,5 được xem là ngày Mega Sale trong ecommerce_90days
+  adstock_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  max_lag: 14
+  bootstrap: 2000
+  legal_max_discount: 0.5           # Nghị định 81/2018 (sửa đổi bởi NĐ 128/2024): mức giảm giá tối đa 50%
+  legal_max_discount_central: 1.0   # chương trình khuyến mại tập trung / được Thủ tướng cho phép
+
+global_models:
+  horizon: 14
+  n_origins: 3
+  min_train_origin: 35
+  lgbm:
+    learning_rate: 0.05
+    num_leaves: 31
+    min_data_in_leaf: 40
+    feature_fraction: 0.9
+    bagging_fraction: 0.9
+    bagging_freq: 1
+    lambda_l2: 1.0
+    num_boost_round: 400
+  coldstart_holdout: 10
+
+probabilistic:
+  quantiles: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  deepar: true            # cần neuralforecast; nếu thiếu thư viện stage 06 tự bỏ qua DeepAR
+  deepar_max_steps: 500
+  conformal_alpha: 0.2
+
+budget:
+  # phân bổ ngân sách quảng cáo theo ngày giữa 3 ngành (panel)
+  levels: [0.5, 0.75, 1.0, 1.25, 1.5]
+  min_share: 0.10          # tối thiểu 10% ngân sách/ngành để duy trì hiện diện
+  w_gmv_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+
+cashflow:
+  settlement_lag_days: [0, 7, 10, 14]
+  lead_time_days: [7, 30]
+  platform_fee: [0.0, 0.1]
+
+hitl:
+  budget_quantile: 0.95
+  discount_review: 0.40
+  require_positive_cm: true
+
+genai:
+  provider: openai
+  model: gpt-5-mini
+  enabled: false           # mặc định chạy bằng bộ máy quy tắc (tất định) – đặt OPENAI_API_KEY và enabled: true để bật

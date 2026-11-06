@@ -1,0 +1,31 @@
+{
+ "doc_type": "TIỂU LUẬN CUỐI KỲ",
+ "course": "Chuyên đề học phần: Các mô hình dự báo trong kinh doanh (MIE4006)",
+ "title": "ĐO LƯỜNG HIỆU QUẢ QUẢNG CÁO – KHUYẾN MÃI VÀ DỰ BÁO GMV MÙA MEGA SALE CHO DOANH NGHIỆP THƯƠNG MẠI ĐIỆN TỬ VIỆT NAM: TỪ CHẨN ĐOÁN DỮ LIỆU, PHÂN RÃ CHUỖI THỜI GIAN, HỌC MÁY TOÀN CỤC, DỰ BÁO XÁC SUẤT ĐẾN TÁC TỬ AI PHÂN BỔ NGÂN SÁCH MARKETING",
+ "people": [
+  "Học viên: Đinh Nguyễn Tấn Nguyên",
+  "Người hướng dẫn khoa học: TS. Trần Duy Thanh",
+  "Chương trình: Thạc sĩ Thương mại điện tử"
+ ],
+ "place": "Thành phố Hồ Chí Minh, năm 2026",
+ "front": [
+  "00_front.tm"
+ ],
+ "chapters": [
+  "ch1.tm",
+  "ch2.tm",
+  "ch3.tm",
+  "ch4a.tm",
+  "ch4b.tm",
+  "ch4c.tm",
+  "ch5.tm",
+  "ch6.tm",
+  "refs.tm",
+  "appx.tm"
+ ],
+ "out": "BaoCao_MegaSale_Marketing_VN.docx",
+ "cover_course": "Môn học: Các mô hình dự báo trong kinh doanh",
+ "teacher": "TS. Trần Duy Thanh",
+ "student": "Đinh Nguyễn Tấn Nguyên – C25611252",
+ "cover_date": "TP.HCM, THÁNG 11/2026"
+}

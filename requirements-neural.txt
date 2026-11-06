@@ -1,0 +1,3 @@
+# Tùy chọn: huấn luyện lại DeepAR / LSTM-MQ ở Stage 06 (cần PyTorch). Nếu không cài, Stage 06 dùng kết quả kiểm định chéo đã lưu
+# trong data/interim/cache/ của lần chạy chính thức; xóa thư mục cache để buộc huấn luyện lại.
+neuralforecast>=1.7

@@ -1,0 +1,34 @@
+33
+00_front.tm 49 20,501 | The data consist of twelve synthetic course datasets (20,501 rows) and 82 months of official retail 
+00_front.tm 51 0.967 | ders. Yearly seasonality dominates the daily revenue series (strength 0.967), whereas marketing spend shows no dete
+00_front.tm 51 0.026 |  marketing spend shows no detectable relation with the residual (r = −0.026; joint lag test p = 0.9999). Vietnamese
+00_front.tm 53 0.273 | rison suggests a 15.3% double-day uplift, which shrinks to 0.79% (p = 0.273) after controlling for day of week. Emp
+00_front.tm 53 663,207 |  loss (5.410 and 5.414); ordering at the critical fractile yields VND 663,207.1 million, 94.76% of the perfect-foresi
+00_front.tm 55 2,027 | y lead time the minimum cash buffer rises from VND 1,228.8 million to 2,027.7 million as the settlement lag grows f
+appx.tm 65 1.177,6 | ) và tháng 11 (464,4), cho 472,4; tháng 6/2021 bằng tổng quý II/2021 (1.177,6) trừ tháng 4 (409,4) và tháng 5 (393,6)
+ch2.tm 241 1,4826 | Hằng số 1,4826 làm cho 1,4826 × MAD là ước lượng nhất 
+ch2.tm 241 1,4826 | Hằng số 1,4826 làm cho 1,4826 × MAD là ước lượng nhất quán của σ dưới
+ch2.tm 246 1,4826 | Thước đo phân tán | IQR | Độ lệch chuẩn cục bộ | 1,4826 × MAD
+ch2.tm 355 129.600 | theo lũy thừa bậc bốn của tỷ lệ tần suất quan sát, cho giá trị khoảng 129.600 với dữ liệu tháng. Luận văn dùng λ = 14
+ch2.tm 391 365,25 |  điểm ngoặt đã qua, γ đảm bảo tính liên tục, P là chu kỳ (7 cho tuần, 365,25 cho năm) và N là số bậc Fourier. Các th
+ch2.tm 635 1,2816 |  2026a, Ch4 tr.17). Mã Python của slide dùng Z~0,9~ = norm.ppf(0,9) ≈ 1,2816 để tính lượng tồn kho phòng thủ (Trần D
+ch3.tm 115 0,941 | tự tính từ chuỗi ước tính lần đầu: hệ số tương quan giữa hai chuỗi là 0,941 và chênh lệch tuyệt đối trung bình là 3
+ch3.tm 514 1,2816 |  hướng cộng tắt dần và mùa vụ cộng chu kỳ 12, khoảng 80% xấp xỉ bằng ±1,2816 · σ · √h; SARIMA(1,1,1)(0,1,1)~12~ trên
+ch4a.tm 61 1,764 | ả 2), hệ số giảm xuống 7,314 và R² tăng từ 0,556 lên 0,795. Mức chênh 1,764 đơn khớp chính xác với công thức thiên 
+ch4a.tm 183 29,86 | marketing. Tệp đa mùa vụ có cột marketing_spend theo ngày (trung bình 29,86, dao động từ 10 đến 49,91), nên luận vă
+ch4a.tm 195 29,86 | ong dữ liệu. Để dễ hình dung quy mô, với chi phí marketing trung bình 29,86 và λ = 0,5, adstock ở trạng thái dừng x
+ch4a.tm 195 29,86 | i phí ngày, nên β = 0,20 tương ứng với một đóng góp khoảng 0,20 × 2 × 29,86 ≈ 11,9 điểm doanh thu chuẩn hóa – lớn g
+ch4b.tm 189 1,2816 | slide (làm tròn thành 193 trên slide tr.17), hoặc 192,93 khi dùng Z = 1,2816 chính xác; tổn thất pinball ở q = 0,9 c
+ch4b.tm 247 4.174,5 | 2,6 triệu VNĐ), chính sách q^*^ trên Quantile LightGBM tăng lợi nhuận 4.174,5 triệu VNĐ (khoảng 0,63%) đồng thời *giả
+ch4b.tm 247 31.941,9 |  nhuận 4.174,5 triệu VNĐ (khoảng 0,63%) đồng thời *giảm* vốn hàng đặt 31.941,9 triệu VNĐ. So với đặt P90 cho mọi SKU (
+ch4b.tm 247 36.929,2 | ệu VNĐ. So với đặt P90 cho mọi SKU (626.277,9 triệu VNĐ), mức tăng là 36.929,2 triệu VNĐ, trong khi P90 cần thêm 229.7
+ch4b.tm 247 229.719,9 | ,9 triệu VNĐ), mức tăng là 36.929,2 triệu VNĐ, trong khi P90 cần thêm 229.719,9 triệu VNĐ vốn hàng (khoảng 9,4%) và chị
+ch4b.tm 247 33.330,0 | e study đạt 629.877,1 triệu VNĐ, thấp hơn q^*^ trên Quantile LightGBM 33.330,0 triệu VNĐ (khoảng 5,0%), dù cùng ý tưởn
+ch4b.tm 247 35.922,2 | ai phía. Khoảng cách còn lại giữa chính sách q^*^ tốt nhất và Oracle (35.922,2 triệu VNĐ, khoảng 5,1%) là cái giá khôn
+ch4b.tm 249 702.019,6 | ính sách q^*^ trên phân vị phần dư: 663.962,6 + 19.807,2 + 18.249,8 = 702.019,6 triệu VNĐ; với đặt P50: 659.032,6 + 25.
+ch4b.tm 249 702.019,7 | = 702.019,6 triệu VNĐ; với đặt P50: 659.032,6 + 25.399,0 + 17.588,1 = 702.019,7 triệu VNĐ; với Oracle: 699.884,8 + 1.14
+ch4b.tm 249 702.019,7 | 88,1 = 702.019,7 triệu VNĐ; với Oracle: 699.884,8 + 1.143,3 + 991,6 = 702.019,7 triệu VNĐ (chênh lệch ở chữ số cuối do 
+ch4c.tm 202 7.710,6 | 7,0 nghìn tỷ đồng, cao hơn 13,8% so với tổng 12 tháng 10/2025–9/2026 (7.710,6 nghìn tỷ đồng).
+ch5.tm 55 4.174,5 | i SKU (626.277,9) ({T:newsvendor}). Mức chênh giữa q^*^ và P50 khoảng 4.174,5 triệu VNĐ – tương đương 0,6% lợi nhuận 
+ch5.tm 55 31.941,9 | nhuận – có vẻ nhỏ, nhưng nó đến cùng với vốn hàng đặt thấp hơn khoảng 31.941,9 triệu VNĐ và lỗ thanh lý thấp hơn khoản
+ch5.tm 55 3.992,2 | đặt thấp hơn khoảng 31.941,9 triệu VNĐ và lỗ thanh lý thấp hơn khoảng 3.992,2 triệu VNĐ. Chính sách "đặt dư cho an to

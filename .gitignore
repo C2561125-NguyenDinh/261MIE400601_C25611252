@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+run.log
+lightning_logs/
+.pytest_cache/
+~$*
+
+# Chỉ đưa mã nguồn lên GitHub: bỏ báo cáo và kết quả sinh tự động (tái tạo bằng run_all.sh / START_WINDOWS.bat)
+*.docx
+*.pdf
+outputs/
+REPORT_READY/
+data/interim/*
+!data/interim/cache/
+_tam/
